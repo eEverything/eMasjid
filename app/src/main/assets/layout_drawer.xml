@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+
+                <ImageView
+                    android:id="@+id/imag_masjid"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/masjid_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/imag_home"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/home" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/home_lbl"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/imag_edit"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/edit_icon" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/edit_profile"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_edit_masjid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/edit_icon" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/edit_masjid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/edit_profile"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_fav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/imag_fav"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/heart" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/favourites_lbl"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_masjid_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/imag_search"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/serch_blk" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_search_masjid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/search_masjid_lbl"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_search_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/serch_blk" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/search_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="Search"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_editprayers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/edit_prayers" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_edit_prayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/edit_prayer_lbl"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/imag_contact_us"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/con_mail" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_contact_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="@string/contact_us_lbl"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/img_login"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_login" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/txt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/home"
+                    android:text="Logout"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/grey_lite" />
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/sponsors_lbl"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/grey_lite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/logo_1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/logo_2" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/logo_3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

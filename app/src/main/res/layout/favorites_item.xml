@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/line_fav_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/msjid_image"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:src="@drawable/test" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/msjid_name"
+                    android:tag="masjid_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Hounsnow jamia Masjid"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/msjid_town"
+                    android:tag="town"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Masjid"
+                    android:textColor="@color/deep_sky_blue"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/latestmsg"
+                    android:tag="latest_masjid_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Hounsnow"
+                    android:textColor="#767676"
+                    android:textSize="@dimen/_11ssp"
+                    app:customFont="Poppins-SemiBold.ttf" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+<!--
+            <ImageView
+                android:id="@+id/msjid_unfollow"
+                android:tag="unfollow"
+                android:padding="@dimen/_15sdp"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/unfollow" />
+-->
+
+            <ImageView
+                android:id="@+id/msjid_unfollow"
+                android:tag="unfollow"
+                android:padding="@dimen/_6sdp"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/unfollow" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:tag="label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_76sdp"
+        android:background="#EBEBEB" />
+
+</LinearLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string name="app_name">Go Safe Nirbhaya</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">85a9dd0c-9bef-4b9c-b59a-9ec4f20d953f</string>
+    <string name="facebook_app_id">1353886677997241</string>
+</resources>

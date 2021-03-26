@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:background="@color/grey_lite3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_5sdp">
+
+            <com.custom_widgets.CustomTextView
+                android:tag="name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_16ssp"
+                android:text="Hounslow Central Mosque"
+                app:customFont="Poppins-Medium.ttf" />
+
+            <com.custom_widgets.CustomTextView
+                android:tag="town"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/deep_sky_blue"
+                android:textSize="@dimen/_14ssp"
+                android:text="JUUMasjid"
+                app:customFont="Poppins-Light.ttf" />
+
+            <com.custom_widgets.CustomTextView
+                android:tag="city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:text="Mosque in Hounslow, England"
+                app:customFont="Poppins-Light.ttf" />
+
+        </LinearLayout>
+
+        <com.custom_widgets.CustomTextView
+            android:tag="about_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:lineSpacingExtra="@dimen/_minus5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            android:text="Loream ipsum Loream ipsum Loream ipsum Loream ipsum Loream ipsum Loream ipsum Loream ipsum Loream ipsum Loream ipsum "
+            app:customFont="Poppins-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:tag="label"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/loction" />
+
+            <com.custom_widgets.CustomTextView
+                android:tag="address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2sdp"
+                android:text="367 Welington Rd S, Hownslow TR4 "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12ssp"
+                app:customFont="Poppins-Light.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView                android:tag="label"
+
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/call" />
+
+            <com.custom_widgets.CustomTextView
+                android:tag="phone_number"
+                android:text="020 8570 0938"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12ssp"
+                app:customFont="Poppins-Light.ttf" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView                android:tag="label"
+
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/mail_1" />
+
+            <com.custom_widgets.CustomTextView
+                android:tag="email"
+                android:text="info@youmasjid.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12ssp"
+                app:customFont="Poppins-Light.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <ImageView                android:tag="label"
+
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/brow" />
+
+            <com.custom_widgets.CustomTextView
+                android:tag="website"
+                android:text="www.youmasjid.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_12ssp"
+                app:customFont="Poppins-Light.ttf" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp">
+
+        <ImageView                android:tag="label"
+
+            android:id="@+id/majid_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/majid_banner" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:tag="profile_picture"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/test"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:tag="close"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_2sdp"
+            android:padding="@dimen/_7sdp"
+            android:src="@drawable/close" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

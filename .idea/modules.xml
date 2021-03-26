@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tru.iml" filepath="$PROJECT_DIR$/.idea/modules/Tru.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tru.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tru.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myserverrequest/Tru.myserverrequest.iml" filepath="$PROJECT_DIR$/.idea/modules/myserverrequest/Tru.myserverrequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/swipe-reveal-layout/Tru.swipe-reveal-layout.iml" filepath="$PROJECT_DIR$/.idea/modules/swipe-reveal-layout/Tru.swipe-reveal-layout.iml" />
+    </modules>
+  </component>
+</project>

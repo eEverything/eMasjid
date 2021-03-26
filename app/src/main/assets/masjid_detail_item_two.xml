@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_lite3"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lin_delere"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/minus"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_forground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_weight="8"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:tag="profile_picture"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/test" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/_5sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.custom_widgets.CustomTextView
+                            android:tag="news_title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Southall Jamia Masjid"
+                            android:textColor="@color/deep_sky_blue"
+                            android:textSize="@dimen/_10ssp"
+                            app:customFont="Poppins-Light.ttf" />
+
+
+                        <com.custom_widgets.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="sjamia"
+                            android:textColor="@color/text_black_deep"
+                            android:textSize="@dimen/_10ssp"
+                            app:customFont="Poppins-Light.ttf" />
+
+                        <com.custom_widgets.CustomTextView
+                            android:tag="day_ago"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:ellipsize="end"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:text="2 min"
+                            android:textColor="@color/text_black_deep"
+                            android:textSize="@dimen/_10ssp"
+                            app:customFont="Poppins-Light.ttf" />
+
+                    </LinearLayout>
+
+
+                    <com.custom_widgets.CustomTextView
+                        android:tag="description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_minus3sdp"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_minus3sdp"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+                        android:textColor="@color/text_black_deep"
+                        android:textSize="@dimen/_10ssp"
+                        app:customFont="Poppins-Light.ttf" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/share" />
+
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-5dp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="@string/share"
+                    android:textColor="@color/text_black_deep"
+                    android:textSize="@dimen/_10ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/alaram" />
+
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-5dp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:text="@string/alarm"
+                    android:textColor="@color/text_black_deep"
+                    android:textSize="@dimen/_10ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+            <ImageView
+                android:tag="image_one"
+                android:id="@+id/image_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/test" />
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:tag="image_two"
+                    android:id="@+id/image_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/test" />
+
+
+                <View
+                    android:background="#99000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="+ 3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25ssp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>    </LinearLayout>
+</FrameLayout>
+
+

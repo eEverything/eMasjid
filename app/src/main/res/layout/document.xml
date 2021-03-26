@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.emasjid.Document">
+
+    <RelativeLayout
+        android:id="@+id/rel_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/blue_shade"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/taj_img"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/taj"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/left_arow"
+            android:tag="back" />
+
+
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

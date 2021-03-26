@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_lite3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/detaillist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:scrollbars="none"
+            android:tag="detaillist"
+            android:visibility="gone"
+            tools:listitem="@layout/masjid_detail_item_bookmark" />
+
+        <com.custom_widgets.CustomTextView
+            android:id="@+id/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="No pin found please add pin"
+            android:textColor="@color/grey1"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/upload"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/doc_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/copy"
+                android:tag="document" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="label"
+                android:text="Document"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/camera_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/cemera"
+                android:tag="camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="label"
+                android:text="Camera"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/galay_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/gal_ic"
+                android:tag="gellery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="label"
+                android:text="Gellery"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

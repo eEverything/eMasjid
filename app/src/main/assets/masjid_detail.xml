@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_lite3"
+    tools:context="com.emasjid.MasjidDetail">
+
+    <RelativeLayout
+        android:id="@+id/rel_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/blue_shade"
+        android:visibility="gone">
+
+        <com.custom_widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:tag="name1"
+            android:text="Masjid Name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp"
+            app:customFont="Poppins-Medium.ttf" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/left_arow"
+            android:tag="back" />
+
+        <ImageView
+            android:id="@+id/f_icon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@mipmap/follow"
+            android:tag="folowicon" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/rel_top_header"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/masjidname"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/information"
+                android:tag="masjidinfo" />
+
+            <com.custom_widgets.CustomTextView
+                android:id="@+id/masjidname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_7sdp"
+                android:tag="name"
+                android:text="Sounthall Jamia Masjid"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/_14ssp"
+                app:customFont="Poppins-SemiBold.ttf" />
+
+            <ToggleButton
+                android:id="@+id/togle_button"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/masjidname"
+                android:background="@drawable/notification_toggel"
+                android:checked="true"
+                android:tag="toggle"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="label"
+                    android:text="@string/fajr"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue_dark"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="fajr_time"
+                    android:text="04:20"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="label"
+                    android:text="@string/duhr"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue_dark"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="duhr_time"
+                    android:text="04:20"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="label"
+                    android:text="@string/asar"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue_dark"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="asar_time"
+                    android:text="04:20"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="label"
+                    android:text="@string/magrib"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue_dark"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="magrib_time"
+                    android:text="04:20"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="label"
+                    android:text="@string/isha"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/deep_sky_blue_dark"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:tag="isha_time"
+                    android:text="04:20"
+                    android:textColor="@color/white"
+                    app:customFont="Poppins-Regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/detaillist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scrollbars="none"
+            android:tag="detaillist" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:background="@drawable/upload"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/doc_layout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/copy"
+                android:tag="document" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="label"
+                android:text="Document"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera_layout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/cemera"
+                android:tag="camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="label"
+                android:text="Camera"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/galay_layout"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/gal_ic"
+                android:tag="gellery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:tag="label"
+                android:text="Gellery"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.custom_widgets.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/pin"
+            android:background="@drawable/white_et"
+            android:ellipsize="end"
+            android:tag="enternews"
+            android:hint="@string/writeamessage"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:textSize="@dimen/_12ssp" />
+
+        <RelativeLayout
+            android:id="@+id/pin"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/send"
+            android:background="@drawable/white_et">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tag="docicon"
+                android:layout_centerInParent="true"
+                android:src="@drawable/plug" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/send"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/white_et">
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:tag="sendiacon"
+                android:src="@drawable/send" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

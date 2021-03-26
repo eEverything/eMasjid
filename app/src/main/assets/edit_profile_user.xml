@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/blue_shade"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:tag="label"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/taj" />
+
+        <ImageView
+            android:tag="back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/left_arow" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <com.custom_widgets.CustomTextView
+                android:tag="label"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/editptrofile"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15ssp"
+                app:customFont="Poppins-Medium.ttf" />
+
+            <View
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@android:color/black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:tag="profile_picture"
+                android:layout_width="@dimen/_95sdp"
+                android:layout_height="@dimen/_95sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/test"
+                app:civ_border_color="#EEECEC"
+                app:civ_border_width="@dimen/_2sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="vertical">
+
+
+                <com.custom_widgets.CustomEditText
+                    android:tag="first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/grey_border"
+                    android:hint="@string/firstname"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textColor="@color/grey2"
+                    android:textColorHint="@color/grey1"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomEditText
+                    android:tag="last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/grey_border"
+                    android:hint="@string/lastname"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textColor="@color/grey2"
+                    android:textColorHint="@color/grey1"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomEditText
+                    android:tag="email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/grey_border"
+                    android:hint="@string/emailaddress"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textColor="@color/grey2"
+                    android:textColorHint="@color/grey1"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomEditText
+                    android:tag="old_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/grey_border"
+                    android:hint="@string/oldpass"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textColor="@color/grey2"
+                    android:textColorHint="@color/grey1"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomEditText
+                    android:tag="password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/grey_border"
+                    android:hint="@string/newpass"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textColor="@color/grey2"
+                    android:textColorHint="@color/grey1"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomEditText
+                    android:tag="confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/grey_border"
+                    android:hint="@string/conpass"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:textColor="@color/grey2"
+                    android:textColorHint="@color/grey1"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontEditText="Poppins-Regular.ttf" />
+
+
+                <com.custom_widgets.CustomButton
+                    android:tag="update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/selector_blue_shadow_button"
+                    android:gravity="center"
+                    android:inputType="textFilter"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_55sdp"
+                    android:paddingRight="@dimen/_55sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/update"
+                    android:textColor="@android:color/white"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFontButton="Poppins-SemiBold.ttf"
+                    tools:ignore="UnusedAttribute" />
+
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_minus6sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:text="@string/public_information"
+                    android:textColor="@color/grey2"
+                    android:textSize="@dimen/_10ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

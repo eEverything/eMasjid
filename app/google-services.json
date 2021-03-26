@@ -1,0 +1,234 @@
+{
+  "project_info": {
+    "project_number": "110013692847",
+    "firebase_url": "https://diplinking.firebaseio.com",
+    "project_id": "diplinking",
+    "storage_bucket": "diplinking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110013692847:android:c4d367bc4c533ca6",
+        "android_client_info": {
+          "package_name": "com.daisy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNIA9ZvmNSybaMDBfoSyj0xlhFjRtN4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110013692847:android:31a35a751ac4477d",
+        "android_client_info": {
+          "package_name": "com.emasjid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNIA9ZvmNSybaMDBfoSyj0xlhFjRtN4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110013692847:android:1c328fd10bf6642d",
+        "android_client_info": {
+          "package_name": "com.ethicare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110013692847-ebqmht5v5lm6mgagisa11bk04938nf1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ethicare",
+            "certificate_hash": "e8f1836accbcfd4f8fd1e54a74205ae161880702"
+          }
+        },
+        {
+          "client_id": "110013692847-v3ktb2so19nc8s5tdnkhgvk3rkl7q5vv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ethicare",
+            "certificate_hash": "bc131aaecb2134fa8b44a742782b530b8cf00c74"
+          }
+        },
+        {
+          "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNIA9ZvmNSybaMDBfoSyj0xlhFjRtN4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "110013692847-fmqoif3h4d8ge7asfooufh6bit4593p8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.keshav.universal1"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110013692847:android:842e66f99877e04d",
+        "android_client_info": {
+          "package_name": "com.firebasedinvite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110013692847-rlqbrsdbqj2po4a7m1bc6i75tuv4h898.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebasedinvite",
+            "certificate_hash": "4275cf89dfaa9a06b6e9405b2bb79677682145c8"
+          }
+        },
+        {
+          "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNIA9ZvmNSybaMDBfoSyj0xlhFjRtN4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "110013692847-fmqoif3h4d8ge7asfooufh6bit4593p8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.keshav.universal1"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110013692847:android:53d4a4e8c2a793a1",
+        "android_client_info": {
+          "package_name": "com.vizzou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110013692847-50bkqganjekmgg4muvc2ogqj0ghr50et.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vizzou",
+            "certificate_hash": "b8e24c8c8c3f63e059095086567fadc6e02c9381"
+          }
+        },
+        {
+          "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaNIA9ZvmNSybaMDBfoSyj0xlhFjRtN4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110013692847-ooou8oep5bpucem7n6livmkjc0e8jpub.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "110013692847-fmqoif3h4d8ge7asfooufh6bit4593p8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.keshav.universal1"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

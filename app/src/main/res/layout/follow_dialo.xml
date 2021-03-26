@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_15sdp"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:background="@drawable/follow_dialog"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/profile_picture"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_gravity="center_horizontal"
+                android:text="Unfollow @kTs ?"
+                android:textColor="@color/text_black_deep"
+                android:textSize="@dimen/_12ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/grey_lite5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/cancel"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cancel"
+                    android:textColor="@color/text_black_deep"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customFont="Poppins-Medium.ttf"/>
+
+
+                <View
+                    android:background="@color/grey_lite5"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+
+                <com.custom_widgets.CustomTextView
+                    android:id="@+id/follow"
+                    android:padding="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Unfollow"
+                    android:textColor="@color/text_black_deep"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customFont="Poppins-Medium.ttf"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

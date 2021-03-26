@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">eMasjid</string>
+    <string name="forgot_your_password_lbl">Forgot Your Password?</string>
+    <string name="forgot_your_password_detail">Forgot your password? enter your email address here to reset your password</string>
+    <string name="email_hint">your email</string>
+    <string name="send">Send</string>
+    <string name="home_lbl">Home</string>
+    <string name="favourites_lbl">Favourites</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="search_masjid_lbl">Search Masjid</string>
+    <string name="contact_us_lbl">Contact us</string>
+    <string name="login_lbl">Login</string>
+    <string name="sponsors_lbl">Sponsors</string>
+    <string name="contact_us_title">Contact Us</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_message">Your Message</string>
+    <string name="title_prayer_time">Prayer Times</string>
+    <string name="prayer_time_note_text">The information above will be made public to emajid users.</string>
+
+    <string name="lorem_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="lorem_short">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+    <!--Edit profile user-->
+    <string name="public_information">The information above will be made \n public to eMasjid users</string>
+    <string name="editptrofile">Edit Profile</string>
+    <string name="update">Update</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="emailaddress">Email Address</string>
+    <string name="oldpass">Old Password</string>
+    <string name="newpass">New Password</string>
+    <string name="conpass">Confirm Password</string>
+
+    <!--Edit profile masjid-->
+    <string name="masjidname">Masjid Name</string>
+    <string name="street">Street</string>
+    <string name="postcode">Postcode</string>
+    <string name="city">City</string>
+    <string name="town">Town</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="website">Website</string>
+    <string name="aboutus">About us</string>
+    <string name="donate_link">Donate link</string>
+
+    <!--Login-->
+    <string name="loginnewwithemasjid">Login with eMasjid</string>
+    <string name="loginwithemasjid">Register with eMasjid</string>
+    <string name="emasjid">eMasjid</string>
+    <string name="msjidusername">Masjid Username</string>
+    <string name="email">Email</string>
+    <string name="confirmemail">Confirm Email</string>
+    <string name="password">Password</string>
+    <string name="masjiduser">Masjid</string>
+    <string name="user">User</string>
+    <string name="register">Register</string>
+    <string name="bysigningup">By signing up you agree to our \n Terms &amp; Privacy Policy.</string>
+    <string name="notamasjid">Not a  masjid?</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+
+    <!--Search-->
+    <string name="search">Search Masjid Name, City or Town</string>
+    <string name="useryourlocation">Use Your Location</string>
+
+    <!--Masjid Detail-->
+    <string name="fajr">Fajr</string>
+    <string name="duhr">Duhr</string>
+    <string name="asar">Asr</string>
+    <string name="magrib">Magrib</string>
+    <string name="isha">Isha</string>
+    <string name="writeamessage">Write a message</string>
+    <string name="share">Share</string>
+    <string name="alarm">Alarm</string>
+
+
+    <!--SignIn-->
+
+    <string name="signin">Sign In</string>
+    <string name="masjidusername">Masjid Username</string>
+    <string name="forgotpass">Forgot Password?</string>
+    <string name="registeras">Register</string>
+    <string name="masjid">Masjid</string>
+
+    <string name="edit_prayer_lbl">Edit Prayer Times</string>
+    <string name="jamaat_label"><u>Jamaat</u></string>
+    <string name="download">Download</string>
+    <string name="save">Save</string>
+    <string name="txt_ok">Ok</string>
+    <string name="remove_pin">Remove Pin</string>
+    <string name="status_changed_successfully">Status Changed Successfully</string>
+
+
+</resources>

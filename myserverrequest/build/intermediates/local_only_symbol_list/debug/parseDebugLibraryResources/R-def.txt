@@ -1,0 +1,11 @@
+R_DEF: Internal format may change without notice
+local
+drawable circular_progress_bar
+drawable placeholder_cam
+id pdialog_progressBar
+id twitter_login_button
+layout progress_dialog
+layout sociallogin
+string app_name
+string com.crashlytics.android.build_id
+string facebook_app_id

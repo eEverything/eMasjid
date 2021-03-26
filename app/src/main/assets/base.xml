@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.emasjid.Base">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_shade">
+
+        <com.custom_widgets.CustomTextView
+            android:id="@+id/fav_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Favorites"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17ssp"
+            android:visibility="gone"
+            app:customFont="Poppins-SemiBold.ttf" />
+
+
+        <com.custom_widgets.CustomTextView
+            android:id="@+id/follow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="Follow"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="gone"
+            app:customFont="Poppins-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/toggle_menu_icon"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:padding="@dimen/_12sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/taj_img"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/taj"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topPanel">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.custom_widgets.CustomTextView
+        android:id="@+id/countryname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/city"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:textColor="@color/grey2"
+        android:textColorHint="@color/grey1"
+        android:textSize="@dimen/_12ssp"
+        app:customFontEditText="Poppins-Regular.ttf" />
+
+
+</LinearLayout>

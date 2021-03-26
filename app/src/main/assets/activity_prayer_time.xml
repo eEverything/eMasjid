@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/blue_shade"
+        android:visibility="gone">
+
+        <com.custom_widgets.CustomTextView
+            android:tag="title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_prayer_time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp"
+            app:customFont="Poppins-Medium.ttf" />
+
+        <ImageView
+            android:tag="back"
+            android:id="@+id/back"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/left_arow" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_top_left_right_skyblue_rounded"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_2sdp"
+                android:paddingTop="@dimen/_2sdp">
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="weekday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14ssp"
+                    app:customFont="Poppins-Medium.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:customFont="Poppins-Medium.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_bg_with_border"
+                android:padding="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/fajr"
+                    android:textColor="@android:color/black"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:gravity="end"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12ssp"
+                    android:tag="fajr_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/grey2"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <ImageView
+                    android:tag="edit_fajr"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/pen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/grey_bg_with_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+            >
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/duhr"
+                    android:textColor="@android:color/black"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:gravity="end"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12ssp"
+
+                    android:tag="duhr_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/grey2"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <ImageView
+                    android:tag="edit_duhr"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/pen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/grey_bg_with_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+            >
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="label"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/asar"
+                    android:textColor="@android:color/black"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:gravity="end"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12ssp"
+
+                    android:tag="asar_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/grey2"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <ImageView
+                    android:tag="edit_asar"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/pen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/grey_bg_with_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+            >
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="label"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/magrib"
+                    android:textColor="@android:color/black"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:gravity="end"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12ssp"
+
+                    android:tag="magrib_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/grey2"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <ImageView
+                    android:tag="edit_magrib"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/pen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/grey_bg_with_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+            >
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="label"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:text="@string/isha"
+                    android:textColor="@android:color/black"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:gravity="end"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_12ssp"
+
+                    android:tag="isha_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/grey2"
+                    app:customFont="Poppins-Regular.ttf" />
+
+                <ImageView
+                    android:tag="edit_isha"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/pen" />
+
+            </LinearLayout>
+
+            <com.custom_widgets.CustomTextView
+                android:tag="label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_18sdp"
+                android:paddingRight="@dimen/_18sdp"
+                android:text="@string/prayer_time_note_text"
+                android:textSize="@dimen/_12ssp"
+                app:customFont="Poppins-Light.ttf" />
+
+
+            <com.custom_widgets.CustomButton
+                android:tag="update"
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/selector_blue_shadow_button"
+                android:gravity="center"
+                android:inputType="textFilter"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:stateListAnimator="@null"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_12ssp"
+                app:customFontButton="Poppins-SemiBold.ttf"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

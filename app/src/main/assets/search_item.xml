@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:tag="profile_picture"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/test" />
+
+                <ImageView
+                    android:tag="right"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:src="@drawable/ok" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="masjid_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Hounsnow jamia Masjid"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="town"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="Masjid"
+                    android:textColor="@color/deep_sky_blue"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+                <com.custom_widgets.CustomTextView
+                    android:tag="follow_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:text="10 Follower"
+                    android:textColor="@color/grey_lite5"
+                    android:textSize="@dimen/_12ssp"
+                    app:customFont="Poppins-Light.ttf" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:tag="label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_76sdp"
+        android:background="#EBEBEB" />
+
+</LinearLayout>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/grey_et_bg">
+
+        <com.custom_widgets.CustomEditText
+            android:tag="search_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:textSize="@dimen/_11ssp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:tag="label"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/gps_icon" />
+
+
+        <com.custom_widgets.CustomTextView
+            android:tag="label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:text="@string/useryourlocation"
+            android:textColor="@color/text_black_deep"
+            android:textSize="@dimen/_10ssp"
+            app:customFont="Poppins-Light.ttf" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:tag="searchlist"
+        android:id="@+id/searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

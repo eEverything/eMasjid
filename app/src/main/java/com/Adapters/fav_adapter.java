@@ -48,9 +48,6 @@ import http.social_login.ServiceCallback;
 
 import static android.content.Context.ALARM_SERVICE;
 
-/**
- * Created by ki-jayu on 28/08/2017.
- */
 
 public class fav_adapter extends RecyclerView.Adapter<fav_adapter.ViewHolder> {
     private List<String> values;
